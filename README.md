@@ -1,6 +1,6 @@
 
 # Portfólio Digital ⭐
-Esse é o meu portfólio digital atual, nele demonstra um pouco mais do meu perfil caso se interesse acesse já o deploy. 
+Esse é o meu portfólio digital atual nele demonstra um pouco mais do meu perfil. Caso se interesse, acesse o deploy. 
 
 
 
@@ -11,7 +11,8 @@ Esse é o meu portfólio digital atual, nele demonstra um pouco mais do meu perf
 Acesse o projeto no link abaixo:
 
 https://alisongfx.github.io/new-portfolio-main/
-alisonsavian.com/
+
+https://alisonsavian.com
 
 
 
