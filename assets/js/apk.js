@@ -1,4 +1,5 @@
 const hamburguer = document.getElementById('hamburguer');
+const age = document.getElementById('age');
 const navMenu = document.querySelector('.nav-itens');
 const linkMenuAnchorAll = document.querySelectorAll('.nav-itens li a');
 const linkMenuAnchor = document.querySelector('.nav-itens li a');
@@ -7,6 +8,26 @@ const nav = document.querySelector('nav');
 function init() {
   startAnimation();
   carouselXp();
+  ageCalc();
+}
+
+function ageCalc(diaIdade = 10, mesIdade = 10, anoIdade = 2002) {
+  let d = new Date(),
+    anoAtual = d.getFullYear();
+  mesAtual = d.getMonth() + 1;
+  diaAtual = d.getDate();
+
+  diaIdade = +diaIdade,
+    mesIdade = +mesIdade,
+    anoIdade = +anoIdade;
+
+  let idade = anoAtual - anoIdade;
+
+  if (mesAtual < mesIdade || mesAtual == mesIdade && diaAtual < diaIdade) {
+    idade--;
+  }
+
+  age.innerHTML = idade < 0 ? 0 : idade;
 }
 
 hamburguer.addEventListener('click', () => {
@@ -115,22 +136,23 @@ function startAnimation() {
     distance: '-30px',
   });
 
+  ScrollReveal({ distance: '70px' }).reveal('.welcome', {
+    duration: 2000,
+    rotate: { x: 0, y: 0, z: 0 },
+    origin: 'bottom'
+  });
+
+
   ScrollReveal({ distance: '70px' }).reveal('.txt-portfolio', {
     duration: 2000,
     rotate: { x: 0, y: 0, z: 0 },
-    origin: 'left'
+    origin: 'top'
   });
 
   ScrollReveal({ distance: '70px' }).reveal('.nav-itens', {
     duration: 2000,
     rotate: { x: 0, y: 0, z: 0 },
     origin: 'top'
-  });
-
-  ScrollReveal({ distance: '70px' }).reveal('.welcome', {
-    duration: 2000,
-    rotate: { x: 0, y: 0, z: 0 },
-    origin: 'bottom'
   });
 
   ScrollReveal({ distance: '70px' }).reveal('.imgphoto > img', {

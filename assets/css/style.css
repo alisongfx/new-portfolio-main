@@ -386,9 +386,13 @@ nav a:hover::after {
 
 .main-content .box-content .txt-portfolio {
     position: absolute;
-    right: -100px;
-    top: 180px;
-    transform: rotate(90deg) !important;
+    width: 114px;
+    top: 120px;
+    right: -60px;
+}
+
+.main-content .box-content .txt-portfolio .txt-rotate {
+    transform: rotate(90deg)
 }
 
 .bg-noise {
@@ -873,7 +877,7 @@ nav a:hover::after {
     background: linear-gradient(44deg, #005863, #00c5df, #00545f, #0090a3);
     background-size: 800% 800%;
     -webkit-animation: movingdeg 15s ease infinite;
-    -moz-animation: movingdeg 15s ease infinite; 
+    -moz-animation: movingdeg 15s ease infinite;
     animation: movingdeg 15s ease infinite;
 }
 
@@ -1032,7 +1036,7 @@ nav a:hover::after {
     color: var(--text-gray-clear);
 }
 
-.academic-proj{
+.academic-proj {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1042,7 +1046,7 @@ nav a:hover::after {
     padding: 80px 40px;
 }
 
-.box-project{
+.box-project {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     ;
@@ -1052,7 +1056,7 @@ nav a:hover::after {
     padding: 30px;
 }
 
-.wrapper-content-proj{
+.wrapper-content-proj {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -1060,14 +1064,14 @@ nav a:hover::after {
     background: linear-gradient(44deg, #005863, #00c5df, #00545f, #0090a3);
     background-size: 800% 800%;
     -webkit-animation: movingdeg 15s ease infinite;
-    -moz-animation: movingdeg 15s ease infinite; 
+    -moz-animation: movingdeg 15s ease infinite;
     animation: movingdeg 15s ease infinite;
     padding: 15px;
-    -webkit-box-shadow: 2px 3px 13px 5px rgba(0,0,0,0.07); 
-    box-shadow: 2px 3px 13px 5px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 2px 3px 13px 5px rgba(0, 0, 0, 0.07);
+    box-shadow: 2px 3px 13px 5px rgba(0, 0, 0, 0.07);
 }
 
-.title-proj{
+.title-proj {
     background: -webkit-linear-gradient(var(--diamond-color), var(--degrade-text-second));
     text-shadow: var(--text-shadow);
     -webkit-background-clip: text;
@@ -1075,7 +1079,8 @@ nav a:hover::after {
     -webkit-text-fill-color: transparent;
 }
 
-.title-academic-proj, .content-card{
+.title-academic-proj,
+.content-card {
     color: white;
 }
 
@@ -1176,7 +1181,7 @@ nav a:hover::after {
         color: var(--text-gray-full) !important;
     }
 
-    .box-project{
+    .box-project {
         display: grid;
         grid-template-columns: repeat(4, minmax(200px, 1fr));
         ;
@@ -1268,14 +1273,14 @@ nav a:hover::after {
         ;
     }
 
-    .box-project{
+    .box-project {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         ;
     }
 }
 
 @media (max-width: 860px) and (min-width: 0px) {
-    .box-project{
+    .box-project {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         ;
     }
@@ -1476,7 +1481,7 @@ nav a:hover::after {
 }
 
 @media (max-width: 400px) and (min-width:0px) {
-    .box-project{
+    .box-project {
         grid-template-columns: repeat(1, minmax(200px, 1fr)) !important;
     }
 
